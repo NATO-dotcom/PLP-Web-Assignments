@@ -1,0 +1,98 @@
+/* 
+   General Styles
+ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 
+   Header
+ */
+.site-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+/* Navigation - Flexbox */
+.nav ul {
+    display: flex; /* Flexbox usage */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.nav li a {
+    color: white;
+}
+
+/* 
+   Main Content - Flexbox
+ */
+.main-content {
+    display: flex; /* Flexbox */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 250px; /* Flexible items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*
+   Grid Section
+*/
+.grid-section {
+    display: grid; /* CSS Grid usage */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+
+/*
+   Footer
+ */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
